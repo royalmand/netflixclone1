@@ -1,0 +1,86 @@
+/* Reset or Normalize CSS */
+/*  to ensure consistency across different browsers by removing or standardizing default styles. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox and Grid Layouts */
+/*  to create responsive layouts. */
+
+/* Flexbox Example */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Grid Example */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Media Queries for Responsiveness */
+/*  to apply different styles based on the screen size, making the design responsive. */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Custom Properties (CSS Variables) */
+/*  allow you to define reusable values, making it easier to manage styles across a project. */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* CSS Animations and Transitions */
+/*  used to add interactivity and smooth changes to your elements. */
+/* Transition Example */
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Animation Example */
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-element {
+    animation: slide-in 1s forwards;
+}
+
+/* :nth-child(odd) */
+/*  used to selects every odd-numbered child of a parent element. In other words, it targets the 1st, 3rd, 5th, 7th, and so on. */
+/* Zebra Stripes in Tables */
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+/* Styling Form Elements */
+form input:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+
+
+
+

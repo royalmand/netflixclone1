@@ -239,9 +239,22 @@ img {
     font-weight: 700;
 }
 
-#text-sign-in {
+.inside-container-sign-in {
+    gap: 16px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    left: 1rem;
+    right: 1rem;
+    top: 4rem;
+    line-height: 1.5;
+  }
+
+#text-sign-in, #rememberMe {
     text-transform: none;
     font-size: 16px;
+    text-align: left;
 }
 
 /* Footer */
